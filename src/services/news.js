@@ -7,5 +7,5 @@ export const getMemberInfoFromLocal = () => {
 }
 
 export async function apiGetAllRegistrations() {
-  return await query(`/all`);
+  return await query(`/snsw_registrations_api.json`, {dl: 1});
 }
